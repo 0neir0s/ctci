@@ -1,0 +1,16 @@
+Question:
+Design data structures for a very large social network like Facebook or Linkedin. Describe how you would design an algorithm to show the connection b/w 2 people
+
+Assume no limits:
+DFS is highly wasteful. BFS is better people who are connected tend to be within 2 or 3 levels.
+
+Get real:
+Too many people. So, will have to split groups across machines.
+Map each friend to an id which will be stored as connections. 
+How to split groups ?
+Hoe to mark nodes as visited ?
+
+Solve:
+Smart segregation - by country, state etc.
+Batch lookups - do it together for 100s of people in the same machine
+Have a separate hash table since marking node will mess up multiple searches.

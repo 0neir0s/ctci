@@ -1,0 +1,10 @@
+Input files with 4 billion positive integers.
+
+Generate an integer not in the file.
+
+If 1 GB memory is available:
+1. Use a bit vector to map each integer's presence. Loop through and print the first absent number
+
+What if only 10 MB is available:
+10 MB - 2^23
+Go block wise. Get all values within a block range and then use bit vector approach

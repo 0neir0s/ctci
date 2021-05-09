@@ -1,0 +1,5 @@
+Array from 1 to N, N<32000
+
+Print all duplicate elements in the array. 
+
+Solution: bit vector / bit set

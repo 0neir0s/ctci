@@ -1,0 +1,11 @@
+Design a cache for a single system:
+
+Linked list allow easy purging of old data by moving fresh items to the front. Whereas, hash table allows efficient lookup of data, but it wouldn't ordinarily allow easy data purging. 
+
+Hashtable and a linked list - Combine them - lookup from hash table and remove stuff using the linked list. Update freshness based on queries.
+
+Expanding it:
+1. Each machine has its own cache - Quick but highly repetitive.
+2. Each machine has its own copy of cache - update takes time, too much space occupied.
+3. Each machine stores a segment of the cache - Divide up the cache(based on hash?) check if the machine has it, if not query and add the cache result to the machine and returns the value
+

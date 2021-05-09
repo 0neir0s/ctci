@@ -1,0 +1,11 @@
+Question:
+Service for getting EoD stock price information to 1000 or so client applications, assuming you already have the data
+
+Approach 1: 
+FTP server - easy to maintain, but difficult on client side - Bad
+
+Approach 2:
+SQL DB - easy for clients, query support, middleware and some security risks
+
+Approach 3:
+XML - easy to distribute, no out of the box querying ability.

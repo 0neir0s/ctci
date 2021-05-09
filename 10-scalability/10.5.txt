@@ -1,0 +1,13 @@
+Infinite loops in a web crawler
+
+What does it mean to visit a page ?
+Content or URL - Both are not enough alone. Estimation of similarity based on both would be better. 
+
+Solution:
+Should have a datavase which stores a list of items we need to crawl.
+
+Query the database to see whether anything similar can be crawled recentlyIf it is, it will be added to the database with low priority.
+If not, crawl the page and insert its links into the database
+
+Completion:
+Set a mininum priority that a page must have to be crawled.

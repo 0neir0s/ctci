@@ -1,0 +1,14 @@
+10 billion URLS - detect duplicate elements:
+
+No limits:
+Hash set
+
+Realistic:
+Too much data
+Will take long time
+
+Solutions:
+
+1. If one machine is enough, store the URLS with same hash on one file. And check duplications file by file.
+
+2. Each machine has a segment of the data. Parallelism possible, but might be unwieldly to manage large machines.

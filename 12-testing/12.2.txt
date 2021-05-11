@@ -1,0 +1,6 @@
+Random crashes
+
+1. Random variable
+2. Uninitialised variable
+3. Memory leak
+4. External dependencies

@@ -1,0 +1,13 @@
+Moving a chess piece to x and y
+
+Testing method
+
+Input variations:
+Invalid position
+- out of bounds
+- invalid for that piece
+- place where a piece exists
+
+Expected values:
+For each of the piece
+For each variation/direction of moves

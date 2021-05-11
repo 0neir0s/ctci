@@ -1,0 +1,8 @@
+Load test
+
+- Response time - Performance for an individual query
+- Throughput - Throughput measures the overall performance of the system. (Transactions per second) 
+- Resource utilisation - percentage of time that a component is actually occupied 
+- Maximum load that system can bear
+
+Simulate concurrent users by creating virtual users programmatically (multi-threaded programs)

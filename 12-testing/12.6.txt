@@ -1,0 +1,22 @@
+ATM
+
+Who: Any
+What: Withdrawing money, Checking balance
+How: Using card
+When: Anytime
+Where: Physically 
+Why:
+
+Fact checks:
+Supported cards, orientation etc.
+
+Intended use:
+Deduction, Balance enquiry
+
+Unintended use:
+Negative balance, incorrect pin
+
+Safety:
+Concurrent withdrawal, Rough use, Too many wrong attempts
+
+Manual and Automated testing

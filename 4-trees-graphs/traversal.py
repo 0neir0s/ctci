@@ -7,16 +7,29 @@ class Graph(object):
     def addEdge(self, a, b):
         self.graph[a].append(b)
 
-def dfs(graph, v, visited):
+def dfs(graph):
     """ DFS: Recursive function accepting a v and visited set """
-    if not v:
-        return
-    visit(v)
-    visited.add(v)
-    for node in graph[v]:
+    def dfsFrom(node):
+        if node in visited:
+            return
+        visited.add(node)
+        visit(node)
+        for neighbor in graph[node]:
+            dfsFrom(neighbor)
+    visited = set()
+    dfsFrom(graph.keys()[0])
+
+def dfsi(graph, v):
+    s, visited = [], set()
+    while s:
+        node = s.pop()
         if node in visited:
             continue
-        dfs(graph, node, visited)
+        visited.add(node)
+        visit(node)
+        for neighbor in graph[node]:
+            s.append(v)
+
 
 def bfs(graph, v):
     q, visited = deque(), {v}
